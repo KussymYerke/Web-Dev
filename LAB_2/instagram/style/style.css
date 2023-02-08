@@ -1,0 +1,145 @@
+*{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+.main{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.phone{
+    height: 550px;
+    margin-right: 25px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+}
+.login{
+    border: 1px solid;
+    border-color: rgba(111,111,111,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px 40px;
+    box-shadow: gray;
+    margin-bottom: 10px;
+}
+
+.or{
+    color: gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    line-height: 0.1em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p span{
+    background: #fff;
+    padding: 0 10px;
+}
+.logo{
+    margin-top: 40px;
+    width: 175px;
+}
+
+.log-btn{
+    background: #47afff;
+    color: white;
+    width: 271px;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+}
+.input{
+    width: 270px;
+    padding: 10px 0 7px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-color: rgba(111,111,111, 0.2);
+}
+
+.input:focus{
+    outline: #2e3d49;
+}
+
+.fb-logo{
+    width: 25px;
+}
+
+.another{
+    display: flex;
+    align-items: center;
+    color: darkblue;
+    margin-bottom: 25px;
+}
+
+.another a{
+    margin-left: 15px;
+}
+.forgot{
+    text-decoration: none;
+    color: darkblue;
+}
+
+ul{
+    padding: 0;
+}
+.signUp{
+    padding: 15px 63px;
+    border: 1px solid;
+    border-color: rgba(111,111,111,0.4);
+}
+
+.appLogo{
+    height: 30px;
+}
+
+.products{
+    justify-content: center;
+    display: flex;
+
+}
+
+.prod-list{
+    list-style: none;
+}
+
+.products:first-child{
+    margin-left: 0;
+}
+
+.prod-link{
+    color: gray;
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.lang{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.arrow{
+    width:12px;
+    height:12px;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 5px;
+}

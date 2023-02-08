@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+ul{
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+
+.header-list{
+    list-style: none;
+}
+
+.logo{
+    height: 25px;
+}
+
+.header-link{
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.main{
+    height: 467.99px;
+    background: url("./../images/bg.jpeg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.main p{
+    font-size: 16px;
+}
+.box{
+    color: white;
+    position: relative;
+    left: 150px;
+    top: 75px;
+}
+
+.left{
+    margin-left: -150px;
+}
+
+.right{
+    margin-right: -150px;
+}
+
+.btn{
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product{
+    padding: 0 12px;
+}
+
+.image{
+    width: 300px;
+}
+
+.catalogue{
+    margin-top: 100px;
+    padding: 0 96px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.arrow{
+    width: 16px;
+    margin-bottom: -2px;
+}
+
+.btm{
+    width: 12px;
+    margin-right: 10px;
+}
+
+.lupa{
+    width: 24px;
+    margin-right: 10px;
+}
+
+.user{
+    width: 24px;
+}
