@@ -6,6 +6,26 @@
   margin-bottom: 10px;
   color: red;
 }
+
+.catalogue{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.description{
+  width: 66%;
+}
+
+.phone{
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.share{
+  width: 100px;
+}
+
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

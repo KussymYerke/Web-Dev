@@ -2,24 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
-import { WatchesComponent } from './watches/watches.component';
-import { LaptopsComponent } from './laptops/laptops.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-
+import { ProductListComponent } from './products/phones/phone-list/product-list.component';
+import { NotFoundComponent } from './products/not-found/not-found.component';
+import {WatchListComponent} from "./products/watches/watch-list/watch-list.component";
+import {WatchAlertsComponent} from "./products/watches/watch-alerts/watch-alerts.component";
+import {LaptopAlertsComponent} from "./products/laptops/laptop-alerts/laptop-alerts.component";
+import {LaptopListComponent} from "./products/laptops/laptop-list/laptop-list.component";
+import {ProductAlertsComponent} from "./products/phones/phone-alerts/product-alerts.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path: '', component: ProductListComponent },
-      {path: 'watches', component: WatchesComponent},
-      {path: 'laptop', component: LaptopsComponent},
+      {path: '', component: ProductListComponent},
+      {path: 'watches', component: WatchListComponent},
+      {path: 'laptops', component: LaptopListComponent},
       {path: '**', component: NotFoundComponent}
     ])
   ],
@@ -27,10 +27,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent,
-    WatchesComponent,
-    LaptopsComponent,
-    NotFoundComponent
+    WatchListComponent,
+    LaptopListComponent,
+    NotFoundComponent,
+    LaptopAlertsComponent,
+    WatchAlertsComponent,
+    ProductAlertsComponent
   ],
   bootstrap: [
     AppComponent
