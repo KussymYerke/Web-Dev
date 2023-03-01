@@ -1,0 +1,27 @@
+<h2>Products</h2>
+<div class="catalogue">
+  <div class="phone" *ngFor="let product of products">
+    <h3>
+      <a href="{{ product.link }}">{{ product.name }}</a>
+    </h3>
+
+    <img class="image" src="{{ product.img }}" />
+
+    <p class="description" *ngIf="product.description">Description: {{ product.description }}</p>
+
+    <div class="rating">Rating: {{ product.rating }}/10</div>
+
+    <button class="share" type="button" (click)="goToURL()">Share</button>
+
+    <!--    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>-->
+
+    <button>DELETE</button>
+  </div>
+
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

@@ -11,16 +11,21 @@ import {WatchAlertsComponent} from "./products/watches/watch-alerts/watch-alerts
 import {LaptopAlertsComponent} from "./products/laptops/laptop-alerts/laptop-alerts.component";
 import {LaptopListComponent} from "./products/laptops/laptop-list/laptop-list.component";
 import {ProductAlertsComponent} from "./products/phones/phone-alerts/product-alerts.component";
+import { MainComponent } from './main/main.component';
+import {MouseListComponent} from "./products/mouses/mouse-list/mouse-list.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path: '', component: ProductListComponent},
+      {path: '', component: MainComponent},
+      {path: 'phones', component: ProductListComponent},
       {path: 'watches', component: WatchListComponent},
       {path: 'laptops', component: LaptopListComponent},
+      {path: 'mouses', component: MouseListComponent},
       {path: '**', component: NotFoundComponent}
+
     ])
   ],
   declarations: [
@@ -32,7 +37,9 @@ import {ProductAlertsComponent} from "./products/phones/phone-alerts/product-ale
     NotFoundComponent,
     LaptopAlertsComponent,
     WatchAlertsComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    MouseListComponent,
+    MainComponent
   ],
   bootstrap: [
     AppComponent
