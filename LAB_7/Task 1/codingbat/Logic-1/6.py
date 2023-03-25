@@ -1,4 +1,4 @@
-def alarm_clock(day, vacation):
+def alarm(day, vacation):
   if abs(day - 3) == 3:
     if vacation:
       return "off"

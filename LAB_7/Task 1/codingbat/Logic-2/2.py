@@ -1,4 +1,4 @@
-def lone_sum(a, b, c):
+def sum_love(a, b, c):
   res = a+b+c
   if a == b or a == c:
     res -= 2*a

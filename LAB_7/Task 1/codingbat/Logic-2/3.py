@@ -1,4 +1,4 @@
-def lucky_sum(a, b, c):
+def sum_lucky(a, b, c):
   sum = 0
   if a != 13:
     sum += a
