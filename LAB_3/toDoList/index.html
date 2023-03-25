@@ -14,7 +14,7 @@
   <div class="app">
     <h1>TO-DO LIST</h1>
     <form>
-      <input type="text" placeholder="Let's us a new task for today">
+      <input type="text" placeholder="Че тааам">
       <button type="submit">&plus;</button>
     </form>
     <ul></ul>
@@ -35,7 +35,7 @@
     const list = document.querySelector("ul");
 
     if (task.value === "") {
-      alert("I can not see anything to add bro");
+      alert("HOW CAN i ADD NOTHiNG");
       return false;
     }
 
@@ -44,10 +44,15 @@
       return false;
     }
 
+    localStorage.setItem("tasks", JSON.stringify([...JSON.parse(localStorage.getItem("tasks") || "[]"), { task: task.value, completed: false }]));
+
     const li = document.createElement("li");
-    li.innerHTML = `<input type="checkbox" onclick="taskComplete(this)" class="check">
-      <input type="text" value="${task.value}" class="task">
-      <i class="fa fa-trash" onclick="removeTask(this)"></i>`;
+    li.innerHTML =
+      `<input type="checkbox" onclick="taskComplete(this)" class="check">
+        <input type="text" value="${task.value}" class="task">
+      <i class="fa fa-trash" onclick="removeTask(this)"></i>
+     `;
+
     list.insertBefore(li, list.children[0]);
     task.value = "";
   }
@@ -67,7 +72,6 @@
     let tasks = Array.from(JSON.parse(localStorage.getItem("tasks")));
     tasks.forEach(task => {
       if (task.task === event.parentNode.children[1].value) {
-        // delete task
         tasks.splice(tasks.indexOf(task), 1);
       }
     });
