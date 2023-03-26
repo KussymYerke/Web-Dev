@@ -1,2 +1,2 @@
-def without_end(str):
+def without(str):
   return str[1:-1]

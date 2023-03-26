@@ -1,2 +1,2 @@
-def first_two(str):
-  return str[:2]
+def first_two(strin):
+  return strin[:2]

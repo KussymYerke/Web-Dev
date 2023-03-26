@@ -1,4 +1,4 @@
-def cat_dog(str):
+def cat(str):
   cat, dog = 0, 0
   for i in range(len(str)-2):
     if str[i:i+3] == 'dog': dog += 1

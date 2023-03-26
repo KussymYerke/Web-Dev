@@ -1,4 +1,4 @@
-def double_char(str):
+def double(str):
   res = ""
   for i in str:
     res += 2*i

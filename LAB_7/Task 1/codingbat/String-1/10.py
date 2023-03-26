@@ -1,2 +1,2 @@
-def non_start(a, b):
+def starting(a, b):
   return a[1:] + b[1:]

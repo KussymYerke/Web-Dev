@@ -1,2 +1,2 @@
-def without_end(str):
+def endless(str):
   return str[1:-1]

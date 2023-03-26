@@ -1,2 +1,2 @@
-def hello_name(name):
+def name(name):
   return "Hello " + name + "!"
