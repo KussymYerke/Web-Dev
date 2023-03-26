@@ -1,5 +1,5 @@
-a = int(input())
-b = int(input())
+num = int(input())
+num2 = int(input())
 
-if a > b : print(a)
-else: print(b)
+if num > num2 : print(num)
+else: print(num2)

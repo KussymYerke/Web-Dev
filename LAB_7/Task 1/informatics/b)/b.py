@@ -1,6 +1,6 @@
-x = int(input())
+num = int(input())
 
-if (x % 4 == 0 and x % 100 != 0) or x % 400 == 0:
+if (num % 4 == 0 and num % 100 != 0) or num % 400 == 0:
     print('YES')
 else:
     print('NO')

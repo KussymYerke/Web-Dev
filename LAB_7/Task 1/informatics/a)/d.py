@@ -1,4 +1,4 @@
-a = int(input())
-b = int(input())
+num = int(input())
+num2 = int(input())
 
-print(b % a)
+print(num2 % num)

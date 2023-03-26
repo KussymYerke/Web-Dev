@@ -1,5 +1,5 @@
-x = int(input())
+num = int(input())
 
-if x > 0 : print(1)
-elif x == 0 : print(0)
+if num > 0 : print(1)
+elif num == 0 : print(0)
 else : print(-1)

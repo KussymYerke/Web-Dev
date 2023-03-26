@@ -1,6 +1,6 @@
-a = int(input())
+num = int(input())
 b = int(input())
 
-if a > b : print(1)
-elif a == b: print(0)
+if num > b : print(1)
+elif num== b: print(0)
 else: print(2)
