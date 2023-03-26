@@ -1,11 +1,11 @@
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    mx = -200
-    mx2 = -200
+    maxi = -200
+    maxi2 = -200
     for i in sorted(arr):
-        if(mx < i):
-            mx2 = mx
-            mx = i
-    print(mx2)
+        if(maxi < i):
+            maxi2 = maxi
+            maxi = i
+    print(maxi2)
     

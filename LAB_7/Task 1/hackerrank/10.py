@@ -1,20 +1,20 @@
 if __name__ == '__main__':
     N = int(input())
-    ls = []
+    listi = []
     for _ in range(N):
         s, *lk = input().split()
         lk = list(map(int, lk));
         if s == 'insert':
-            ls.insert(lk[0], lk[1])
+            listi.insert(lk[0], lk[1])
         if s == 'append':
-            ls.append(lk[0])
+            listi.append(lk[0])
         if s == 'print':
-            print(ls)
+            print(listi)
         if s == 'pop':
-            ls.pop()
+            listi.pop()
         if s == 'sort':
-            ls.sort()
+            listi.sort()
         if s == 'reverse':
-            ls.reverse()
+            listi.reverse()
         if s == 'remove':  
-            ls.remove(lk[0])
+            listi.remove(lk[0])
